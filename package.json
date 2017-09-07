@@ -1,0 +1,29 @@
+{
+  "name": "bucket-sample",
+  "version": "1.0.0",
+  "description": "a scaffold for webserver framework",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-plugin-transform-async-to-module-method": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "koa": "^2.3.0",
+    "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "log4js": "^1.1.1",
+    "mqtt": "^2.9.0",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.0.1",
+    "debug": "^2.6.8",
+    "mocha": "^3.4.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "DEBUG=app,app:* node index.js",
+    "test": "./node_modules/.bin/mocha -t 5000"
+  },
+  "author": "bucket-hat",
+  "license": "MIT"
+}
